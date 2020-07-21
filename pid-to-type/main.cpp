@@ -296,6 +296,6 @@ long long int hextodec(char pid[]) {
 				break;
             }
         }
-	long long int result = (digit[0]*268435456)+(digit[1]*16777216)+(digit[2]*1048576)+(digit[3]*65536)+(digit[4]*4096)+(digit[5]*256)+(digit[6]*16)+digit[7];
+	long long int result = (digit[0]*pow(16,7))+(digit[1]*pow(16,6))+(digit[2]*pow(16,5))+(digit[3]*pow(16,4))+(digit[4]*pow(16,3))+(digit[5]*pow(16,2))+(digit[6]*16)+digit[7];
     return result;
 }
